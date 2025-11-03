@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Admin - U.E. Don Bosco</title>
+    <link rel="stylesheet" href="/static/dashboard/css/dashboard.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <img
+          src="/static/dashboard/assets/logo_don_bosco.jpg"
+          alt="Logo Don Bosco"
+          class="logo"
+        />
+        <button class="logout-btn" id="logoutBtn">Cerrar sesión</button>
+      </div>
+    </header>
+
+    <div class="dashboard-container">
+      <h1>Administración de Usuarios</h1>
+
+      <div id="message" class="message"></div>
+
+      <table class="users-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Usuario</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="usersTableBody"></tbody>
+      </table>
+    </div>
+    <script src="/static/dashboard/js/dashboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cotización - ESPCAM</title>
+  <link rel="stylesheet" href="/static/home/css/variables.css" />
+  <link rel="stylesheet" href="/static/home/css/base.css" />
+  <link rel="stylesheet" href="/static/home/css/header.css" />
+  <link rel="stylesheet" href="/static/home/css/footer.css" />
+  <link rel="stylesheet" href="/static/home/css/cotizacion_form.css" />
+
+</head>
+<body>
+  <header role="banner" class="banner">
+    <a href="/" aria-label="Inicio - ESPCAM"><img src="/static/home/assets/img/logo_espcam.png" alt="Logo de ESPCAM" class="logo" /></a>
+    <div class="main-header">
+        <nav id="main-nav" role="navigation">
+            <ul>
+                <li><a href="/inicio">INICIO</a></li>
+                <li><a href="/tipo-alambres">TIPOS DE ALAMBRES</a></li>
+                <li><a href="/tipo_entregas">TIPOS DE ENTREGAS</a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+
+  <div class="container-form">
+    <h2>ALAMBRE Nº12 / ROMBO DE 7x7</h2>
+    <form id="pedidoForm">
+      <div class="row">
+        <div class="col-md-6">
+          <label class="form-label">Cantidad</label>
+          <input type="number" id="cantidad" class="form-control" placeholder="m2" min="1" required>
+          <label class="form-label">Largo</label>
+          <input type="number" id="largo" class="form-control" placeholder="m" step="0.1">
+          <label class="form-label">Alto</label>
+          <input type="number" id="alto" class="form-control" placeholder="m" step="0.1">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Precio</label>
+          <input type="text" id="precio" class="form-control" value="70 bs" readonly>
+          <label class="form-label">Costo Total</label>
+          <input type="text" id="total" class="form-control" placeholder="0 bs" readonly>
+          <button type="button" class="btn-aceptar mt-3" onclick="calcularTotal(70)">Aceptar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+    <footer role="contentinfo" class="footer-container">
+        <p>CONTACTOS: 73747221</p>
+        <p>DIRECCION: Av. Villazón Km 4 ½ frente a la puerta Nº 2 de agronomía</p>
+        <p>EMAIL: espcam@gmail.com</p>
+    </footer>
+
+  <script>
+    function calcularTotal(precio) {
+      const cantidad = parseFloat(document.getElementById("cantidad").value) || 0;
+      const total = cantidad * precio;
+      document.getElementById("total").value = total.toFixed(2) + " bs";
+      if (cantidad > 0) {
+        alert("Pedido realizado con éxito. Total: " + total.toFixed(2) + " bs");
+      } else {
+        alert("Por favor ingresa una cantidad válida.");
+      }
+    }
+  </script>
+</body>
+</html>

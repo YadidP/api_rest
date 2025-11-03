@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puesto en Fábrica - ESPCAM</title>
+    <link rel="stylesheet" href="/static/home/css/variables.css" />
+    <link rel="stylesheet" href="/static/home/css/base.css" />
+    <link rel="stylesheet" href="/static/home/css/header.css" />
+    <link rel="stylesheet" href="/static/home/css/footer.css" />
+    <link rel="stylesheet" href="/static/home/css/plantilla_entrega.css" />
+</head>
+<body>
+    <header role="banner" class="banner">
+        <a href="/" aria-label="Inicio - ESPCAM"><img src="/static/home/assets/img/logo_espcam.png" alt="Logo de ESPCAM" class="logo" /></a>
+        <div class="main-header">
+            <nav id="main-nav" role="navigation">
+                <ul>
+                    <li><a href="/inicio">INICIO</a></li>
+                    <li><a href="/tipo-alambres">TIPOS DE ALAMBRES</a></li>
+                    <li><a href="/tipo_entregas">TIPOS DE ENTREGAS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="form-page-container">
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d1903.4396536668592!2d-66.2307778!3d-17.4175788!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDI1JzA1LjEiUyA2NsKwMTMnNDcuNyJX!5e0!3m2!1ses-419!2sbo!4v1762131730081!5m2!1ses-419!2sbo"
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="form-section">
+            <h1 class="form-title">Puesto en fábrica</h1>
+            <form>
+                <div class="form-group">
+                    <label>Fecha de entrega (día/mes/año)</label>
+                    <input type="text" value="14/06/2025" placeholder="dd/mm/aaaa">
+                </div>
+                <div class="form-group">
+                    <label>Nombre cliente</label>
+                    <input type="text" value="Manuel Hidalgo Rojas" placeholder="Ingrese el nombre">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer role="contentinfo">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>ESPCAM</h3>
+          <ul>
+            <li><a href="#">Misión y Visión</a></li>
+            <li><a href="#">Equipo</a></li>
+            <li><a href="#">Historia</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Participa</h3>
+          <ul>
+            <li><a href="#">ALCALDIAS</a></li>
+            <li><a href="#">OBRAS PARTICULARES</a></li>
+            <li><a href="#">OBRAS PUBLICAS</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Síguenos</h3>
+          <div class="social-icons" aria-label="Redes sociales">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Twitter">t</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="YouTube">yt</a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© Fabrica de Mallas Olimpicas ESPCAM</div>
+    </footer>
+</body>
+</html>

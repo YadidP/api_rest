@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: var(--color-texto);
+  line-height: 1.6;
+  background-color: var(--color-blanco);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.knowledge__picture {
+  max-width: 100%;
+}
+
+.knowledge__img {
+  width: 100%;
+  display: block;
+}
+.knowledge__img_1 {
+  width: 50px;
+  display: block;
+}
